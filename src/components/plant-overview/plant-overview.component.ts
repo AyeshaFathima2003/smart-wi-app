@@ -100,28 +100,28 @@ export class PlantOverviewComponent {
       id: 'N700',
       name: 'N700',
       location: 'Ludwigshafen, Germany',
-      imageUrl: 'assets/images/plants/N700.jpg',
+      imageUrl: 'https://tse1.mm.bing.net/th?id=OIP.Ey2d-3KH0PJRXyWKmsKIowHaFg&pid=Api&P=0&h=180',
       type: 'aerial'
     },
     {
       id: 'N703',
       name: 'N703',
       location: 'Ludwigshafen, Germany',
-      imageUrl: 'assets/images/plants/N703.jpg',
+      imageUrl: 'https://tse1.mm.bing.net/th?id=OIP.qV93qXOhKG-zYK62eegXDQHaF-&pid=Api&P=0&h=180s',
       type: 'aerial'
     },
     {
       id: 'Q305',
       name: 'Q305',
       location: 'Ludwigshafen, Germany',
-      imageUrl: 'assets/images/plants/Q305.jpg',
+      imageUrl: 'https://tse3.mm.bing.net/th?id=OIP.Df6bJfTn9vIMM6xX4S4FkQHaEK&pid=Api&P=0&h=180',
       type: 'aerial'
     },
     {
       id: 'BP3301',
       name: 'BP 3301',
       location: 'Püttlingen, Germany',
-      imageUrl: 'assets/images/plants/BP3301.jpg',
+      imageUrl: 'https://tse3.mm.bing.net/th?id=OIP.Df6bJfTn9vIMM6xX4S4FkQHaEK&pid=Api&P=0&h=180',
       type: 'illustration'
     }
   ];

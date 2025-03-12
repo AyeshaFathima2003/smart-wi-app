@@ -12,43 +12,49 @@ export class AssetService {
       id: 'B101WM_01',
       name: 'B101WM_01',
       description: 'Axial Expansion Joint',
-      imageUrls: ['assets/images/expansion-joint-1.png'], // ✅ Change to an array
-      status: 'ok' // Add status field
+      imageUrls: ['https://contram.ee/wp-content/uploads/2020/09/01-02-steel-bellows-expansion-joints-1536x1190.jpg','https://tse2.mm.bing.net/th?id=OIP.A8-OCmdlxN3ioZqc5ctIYAHaHU&pid=Api&P=0&h=180','https://tse3.mm.bing.net/th?id=OIP.hrGV9Gvi70GUgG3AfQenXAHaHa&pid=Api&P=0&h=180'], // ✅ Change to an array
+      status: 'ok' ,
+      plant: 'Plant A'
     },
     {
       id: 'WR1118S',
       name: 'Expansion Joint WR1118S',
       description: 'Uga Lab',
-      imageUrls: ['assets/images/expansion-joint-2.png'], // ✅ Change to an array
-      status: 'ok'
+      imageUrls: ['https://contram.ee/wp-content/uploads/2020/09/01-02-steel-bellows-expansion-joints-1536x1190.jpg','https://tse2.mm.bing.net/th?id=OIP.A8-OCmdlxN3ioZqc5ctIYAHaHU&pid=Api&P=0&h=180','https://tse3.mm.bing.net/th?id=OIP.hrGV9Gvi70GUgG3AfQenXAHaHa&pid=Api&P=0&h=180'], // ✅ Change to an array
+      status: 'ok',
+      plant: 'Plant B'
     },
     {
       id: 'P7510FA0-2',
       name: 'Expansion Joint P7510FA0-2',
       description: 'Uga Lab',
-      imageUrls: ['assets/images/expansion-joint-3.png'], // ✅ Change to an array
-      status: 'ok'
+      imageUrls:['https://contram.ee/wp-content/uploads/2020/09/01-02-steel-bellows-expansion-joints-1536x1190.jpg','https://tse2.mm.bing.net/th?id=OIP.A8-OCmdlxN3ioZqc5ctIYAHaHU&pid=Api&P=0&h=180','https://tse3.mm.bing.net/th?id=OIP.hrGV9Gvi70GUgG3AfQenXAHaHa&pid=Api&P=0&h=180'], // ✅ Change to an array
+      status: 'ok',
+      plant: 'Plant C'
     },
     {
       id: 'gauge-1',
       name: 'Pressure Gauge',
       description: 'Monitoring Device',
-      imageUrls: ['assets/images/gauge.png'], // ✅ Change to an array
-      status: 'ok'
+      imageUrls: ['https://contram.ee/wp-content/uploads/2020/09/01-02-steel-bellows-expansion-joints-1536x1190.jpg','https://tse2.mm.bing.net/th?id=OIP.A8-OCmdlxN3ioZqc5ctIYAHaHU&pid=Api&P=0&h=180','https://tse3.mm.bing.net/th?id=OIP.hrGV9Gvi70GUgG3AfQenXAHaHa&pid=Api&P=0&h=180'], // ✅ Change to an array
+      status: 'ok',
+      plant: 'Plant A'
     },
     {
       id: 'stand-1',
       name: 'Equipment Stand',
       description: 'Support Structure',
-      imageUrls: ['assets/images/stand.png'], // ✅ Change to an array
-      status: 'ok'
+      imageUrls: ['https://contram.ee/wp-content/uploads/2020/09/01-02-steel-bellows-expansion-joints-1536x1190.jpg','https://tse2.mm.bing.net/th?id=OIP.A8-OCmdlxN3ioZqc5ctIYAHaHU&pid=Api&P=0&h=180','https://tse3.mm.bing.net/th?id=OIP.hrGV9Gvi70GUgG3AfQenXAHaHa&pid=Api&P=0&h=180'], // ✅ Change to an array
+      status: 'ok',
+      plant: 'Plant B'
     },
     {
       id: 'joint-4',
       name: 'Advanced Joint',
       description: 'High Pressure',
-      imageUrls: ['assets/images/expansion-joint-4.png'], // ✅ Change to an array
-      status: 'ok'
+      imageUrls:['https://contram.ee/wp-content/uploads/2020/09/01-02-steel-bellows-expansion-joints-1536x1190.jpg','https://tse2.mm.bing.net/th?id=OIP.A8-OCmdlxN3ioZqc5ctIYAHaHU&pid=Api&P=0&h=180','https://tse3.mm.bing.net/th?id=OIP.hrGV9Gvi70GUgG3AfQenXAHaHa&pid=Api&P=0&h=180'], // ✅ Change to an array
+      status: 'ok',
+      plant: 'Plant C'
     }
   ];
   

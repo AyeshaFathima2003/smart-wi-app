@@ -5,11 +5,14 @@ import { NgClass, NgFor } from '@angular/common';
 @Component({
   selector: 'app-sidebar',
   standalone: true,
-  imports: [RouterLink, RouterLinkActive, NgClass, NgFor],
+  imports: [RouterLink, RouterLinkActive,  NgFor],
   template: `
     <div class="sidebar">
       <div class="logo">
-        <img src="smart-wi-logo.png" alt="SMART.WI" />
+        <div class="avatar-container">
+          <img src="https://media-exp1.licdn.com/dms/image/C4D0BAQHM-eaCjTgmvg/company-logo_200_200/0/1642081212390?e=2147483647&v=beta&t=0wF9xgUNpUworjcrpGJ4ynPZSkGmpV2BGJBiI1DPcQo" alt="User Avatar" class="avatar" />
+          <span class="logo-text">SMART.WI</span>
+        </div>
       </div>
       
       <div class="nav-items">
@@ -18,9 +21,9 @@ import { NgClass, NgFor } from '@angular/common';
              routerLinkActive="active"
              class="nav-item">
           <span class="icon">
-            <i class="material-icons">{{item.icon}}</i>
+            <i class="material-icons">{{ item.icon }}</i>
           </span>
-          <span class="label">{{item.label}}</span>
+          <span class="label">{{ item.label }}</span>
         </div>
       </div>
       
@@ -48,11 +51,27 @@ import { NgClass, NgFor } from '@angular/common';
 
     .logo {
       padding: 20px;
-      text-align: center;
+      text-align: left;
     }
-    
-    .logo img {
+
+    .avatar-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .avatar {
+      width: 40px;
       height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #ccc;
+      margin-right: 10px;
+    }
+
+    .logo-text {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
     }
 
     .nav-items {
@@ -104,6 +123,8 @@ import { NgClass, NgFor } from '@angular/common';
   `]
 })
 export class SidebarComponent {
+  //imagePath = ;  // Ensure the image is inside src/assets/images/
+  
   navItems = [
     { icon: 'factory', label: 'Plants', route: '/plants' },
     { icon: 'settings', label: 'Assets', route: '/assets' }
