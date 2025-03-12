@@ -9,7 +9,7 @@ import { NgClass, NgFor } from '@angular/common';
   template: `
     <div class="sidebar">
       <div class="logo">
-        <img src="/assets/images/smart-wi-logo.png" alt="SMART.WI" />
+        <img src="smart-wi-logo.png" alt="SMART.WI" />
       </div>
       
       <div class="nav-items">

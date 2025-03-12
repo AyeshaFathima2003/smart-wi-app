@@ -1,7 +1,8 @@
 // plant-overview.component.ts
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { Router } from '@angular/router';
 
 interface Plant {
   id: string;
@@ -93,7 +94,7 @@ interface Plant {
     }
   `]
 })
-export class PlantOverviewComponent implements OnInit {
+export class PlantOverviewComponent {
   plants: Plant[] = [
     {
       id: 'N700',
@@ -125,13 +126,11 @@ export class PlantOverviewComponent implements OnInit {
     }
   ];
 
-  constructor() { }
-
-  ngOnInit(): void { }
+  constructor(private router: Router) { }
 
   viewDetails(plant: Plant): void {
     console.log(`Viewing details for ${plant.id}`);
     // Navigate to the plant details page with the plant ID
-    //this.router.navigate(['/plant', plant.id]);
+    this.router.navigate(['/plants', plant.id]);
   }
 }
