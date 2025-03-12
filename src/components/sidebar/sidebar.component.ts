@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 import { NgClass, NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-sidebar',
   standalone: true,
-  imports: [RouterLink, NgClass, NgFor],
+  imports: [RouterLink, RouterLinkActive, NgClass, NgFor],
   template: `
     <div class="sidebar">
       <div class="logo">
@@ -15,8 +15,8 @@ import { NgClass, NgFor } from '@angular/common';
       <div class="nav-items">
         <div *ngFor="let item of navItems" 
              [routerLink]="item.route"
-             class="nav-item" 
-             [ngClass]="{'active': item.active}">
+             routerLinkActive="active"
+             class="nav-item">
           <span class="icon">
             <i class="material-icons">{{item.icon}}</i>
           </span>
@@ -105,7 +105,7 @@ import { NgClass, NgFor } from '@angular/common';
 })
 export class SidebarComponent {
   navItems = [
-    { icon: 'factory', label: 'Plants', route: '/plants', active: false },
-    { icon: 'settings', label: 'Assets', route: '/assets', active: true }
+    { icon: 'factory', label: 'Plants', route: '/plants' },
+    { icon: 'settings', label: 'Assets', route: '/assets' }
   ];
 }
